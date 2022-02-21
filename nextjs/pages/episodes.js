@@ -3,6 +3,8 @@ import episodes from "./config/episodes";
 import Header from "./components/Header";
 
 function EpisodesPage({ localEpisodes }) {
+  console.log("EpisodesPage props localEpisodes=", localEpisodes);
+  debugger;
   return (
     <>
       <section className="episodes">
@@ -30,6 +32,8 @@ function EpisodesPage({ localEpisodes }) {
 export default EpisodesPage;
 export async function getStaticProps(context) {
   const localEpisodes = episodes;
+  // debugger;
+  console.log("episodes fetched");
   return {
     props: { localEpisodes }, // will be passed to the page component as props
   };

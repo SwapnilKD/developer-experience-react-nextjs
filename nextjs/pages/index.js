@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 
-function HomePage(props) {
+function HomePage111(props) {
   return (
     <section className="home">
       <Header />
@@ -14,4 +14,4 @@ function HomePage(props) {
   );
 }
 
-export default HomePage;
+export default HomePage111;
